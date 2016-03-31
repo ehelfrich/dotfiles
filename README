@@ -1,3 +1,41 @@
 This git repo stores my dotfiles for i3 (i3-blocks), and vim.
 
-3/29/16 - test from VM on another machine
+*********************************************ACKNOWLEDGEMENTS**********************************************
+-i3 Window Manager: https://i3wm.org/
+-i3-gaps by AirBlader : https://github.com/Airblader/i3
+-http://blog.tunnelshade.in/2014/05/making-i3-beautiful.html for the guide and the i3status.conf file
+i used in my first RICE attempt
+
+-in progress
+
+********************************************** HOW TO INSTALL *********************************************
+Steps to install i3, i3-gaps, themes, and other misc. programs for first Rice on ubuntu 14.04 LTS
+
+General Notes:
+-The config file for i3 refers to a config file for the i3status; you will need one
+in order for the i3bar to work properly (one is provided in the dotfile for you)
+
+Step one:
+
+-Install the i3 window manager either through the ubuntu repos with the command
+> sudo apt-get install i3
+-or visit the i3 website https://i3wm.org/ for a more up to date version or other OS's
+
+Step two:
+
+-Once i3 is installed launch the windows manager either through a login manager or editing the config files
+for a bare bones linux install
+-Once launched allow i3 to create the config file and select your modifier key
+-the config file will be located in ~/.i3
+ 
+Step three: 
+-Install i3-gaps to allow for space in between the windows
+-IF YOU DO NOT WANT THIS OR CANNOT INSTALL i3-gaps THEN YOU WILL NEED TO COMMENT OUT
+THE LINES IN ~/.i3/config THAT ARE USED IN i3-gaps TO PREVENT ERRORS 
+-you can install it from https://github.com/Airblader/i3
+-follow his readme on the github page to install it (compile from source)
+-for ubuntu 14.04 LTS there is no config file to run so install all the dependencies that are listed
+on his wiki through the README for your OS using the sudo # apt-get install command
+
+
+
